@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+// In completing this problem there were a few things that occured. I beleive the GPS data was uploaded to the ground station - serial monitor continued to read lines 
+// when it was uploading. 
+// Ran into an issue with the ports - realized the ground station needed to be taken out of box for proper connection. 
