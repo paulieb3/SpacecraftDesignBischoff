@@ -1,0 +1,24 @@
+language: python
+python:
+    - "2.7"
+    
+sudo: false
+cache:
+    directories:
+        - "~/.platformio"
+    
+env:
+    - PLATFORMIO_CI_SRC=examples/SW01_Altitude_Measurement/SW01_Altitude_Measurement.ino
+    - PLATFORMIO_CI_SRC=examples/SW01_Humidity_Measurement/SW01_Humidity_Measurement.ino
+    - PLATFORMIO_CI_SRC=examples/SW01_Pressure_Measurement/SW01_Pressure_Measurement.ino
+    - PLATFORMIO_CI_SRC=examples/SW01_Temperature_Measurement/SW01_Temperature_Measurement.ino
+
+install:
+    - pip install -U platformio
+    - platformio update
+
+    - wget https://github.com/xinabox/arduino-CORE/archive/master.zip -O /tmp/arduino-CORE.zip
+    - unzip /tmp/arduino-CORE.zip -d /tmp/
+
+script:
+    - platformio ci --lib="." --lib="/tmp/arduino-CORE-master" --board=uno --board=zero --board=xinabox_cw01 --board=xinabox_cw02

@@ -1,0 +1,28 @@
+#######################################
+# Syntax Coloring Map For arduino-SN01
+#######################################
+
+#######################################
+# Instance				(KEYWORD1)
+#######################################
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin	KEYWORD2
+getDate	KEYWORD2
+getTime	KEYWORD2
+getAltitude	KEYWORD2
+getLongitude	KEYWORD2
+getLatitude	KEYWORD2
+getSOG	KEYWORD2
+getCOG	KEYWORD2
+getHDOP	KEYWORD2
+getSatelitesConnected	KEYWORD2
+
+#######################################
+# Constants 			(LITERAL1)
+#######################################
+
+

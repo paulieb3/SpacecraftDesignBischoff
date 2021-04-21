@@ -1,0 +1,27 @@
+#######################################
+# Syntax Coloring Map For arduino-SW01
+#######################################
+
+#######################################
+# Instance	(KEYWORD1)
+#######################################
+
+#######################################
+# Methods and Functions	(KEYWORD2)
+#######################################
+
+begin	KEYWORD2
+getPressure	KEYWORD2
+getTempC	KEYWORD2
+getTempF	KEYWORD2
+getHumidity	KEYWORD2
+getPressure	KEYWORD2
+getAltitude	KEYWORD2
+getQNE	KEYWORD2
+poll	KEYWORD2
+
+#######################################
+# Constants	(LITERAL1)
+#######################################
+
+
